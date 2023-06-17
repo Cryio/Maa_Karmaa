@@ -115,8 +115,6 @@ legend{
     padding:0;
     white-space:normal
 }
-progress{
-}
 textarea{
     overflow:auto
 }
@@ -152,17 +150,58 @@ summary{
 }
  body {
      font-family: "ROBOTO", sans-serif;
+     background: #000;
 }
+
+.back_video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    overflow: hidden;
+}
+.gradientback {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    background: -moz-linear-gradient(top, rgba(67, 67, 67, 0) 0%, rgba(0, 0, 0, 1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(67, 67, 67, 0)), color-stop(100%, rgba(0, 0, 0, 1))); /* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(67, 67, 67, 0) 0%, rgba(0, 0, 0, 1) 100%); /* Chrome10+, Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(67, 67, 67, 0) 0%, rgba(0, 0, 0, 1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(67, 67, 67, 0) 0%, rgba(0, 0, 0, 1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(67, 67, 67, 0) 0%, rgba(0, 0, 0, 1) 100%); /* W3C */
+    filter: progid: dximagetransform.microsoft.gradient(startColorstr='#89fff1', endColorstr='#000000', GradientType=0); /* IE6-9 */
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back_video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back_video{
+        width: auto;
+        height: 100%;
+    }
+}
+
  .nav, .slider {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     height: 95vh;
+     height: 100vh;
+     width: auto;
      position: relative;
      background-color: #1e1f26;
      text-align: center;
-     padding: 0 2em;
 }
  .nav h1, .slider h1 {
      font-family: "Josefin Sans", sans-serif;
@@ -170,7 +209,7 @@ summary{
      margin: 0;
      padding-bottom: 0.5rem;
      letter-spacing: 0.5rem;
-     color: #c2063e;
+     color: #cc3843;
      transition: all 0.3s ease;
      z-index: 3;
 }
@@ -232,14 +271,14 @@ summary{
      justify-content: center;
      align-items: center;
      flex: 1;
-     color: #c2063e;
+     color: #cc3843;
      letter-spacing: 0.1rem;
      transition: all 0.5s ease;
      font-size: 2vw;
 }
  .nav-tab:hover {
      color: #1e1f26;
-     background: #03dac6;
+     background: #cc3843;
      transition: all 0.5s ease;
 }
  .nav-tab-slider {
@@ -247,7 +286,7 @@ summary{
      bottom: 0;
      width: 0;
      height: 2px;
-     background: #c2063e;
+     background: #cc3843;
      transition: left 0.3s ease;
 }
  .background {
@@ -290,8 +329,8 @@ summary{
 }
  @-webkit-keyframes loading {
      to {
-         text-shadow: 20px 0 70px #ff0266;
-         color: #ff0266;
+         text-shadow: 20px 0 70px #cc3843;
+         color: #cc3843;
     }
 }
  .loader span:nth-child(2) {
