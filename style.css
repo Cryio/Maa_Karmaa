@@ -298,6 +298,7 @@ summary{
      right: 0;
      z-index: auto;
 }
+
  @media (min-width: 800px) {
      .nav h1, .slider h1 {
          font-size: 5vw;
@@ -396,3 +397,33 @@ summary{
  .loader span:nth-child(22) {
      -webkit-animation-delay: 2.1s;
 }
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line if necessary */
+    justify-content: center; /* Center the images horizontally */
+  }
+  
+  .image-container img {
+    max-width: 40vh; /* Set the maximum width to prevent image overflow */
+    height: auto; /* Maintain aspect ratio and auto-adjust height */
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    margin: 5px;
+  }
+  
+  /* Adjustments for different screen sizes */
+  @media screen and (max-width: 768px) {
+    .image-container img {
+      width: 150px; /* Adjust the size for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .image-container img {
+      width: 100px; /* Adjust the size for even smaller screens */
+    }
+  }
+  .image-container img:hover {
+    opacity: 0.5;
+  }
