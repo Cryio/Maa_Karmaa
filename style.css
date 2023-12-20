@@ -20,23 +20,17 @@ width: 1px;
 }
 
 .color-picker > fieldset {
-border: 1rem;
-display: flex;
-flex-direction: column;
-gap: 1rem;
-width: fit-content;
-background: var(--clr-card-bg);
-padding: 0.5rem 0.5rem;
-margin-right: 2vh;
-margin-left: auto;
-border-radius: 100px;
-transition: all 1s;
-}
-
-@media screen and (min-width: 768px) {
-    .color-picker > fieldset {
-        flex-direction: row;
-    }
+    border: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: min-content;
+    background: var(--clr-card-bg);
+    padding: 0.5rem 0.5rem;
+    margin-right: 2vh;
+    margin-left: auto;
+    border-radius: 100px;
+    transition: all 1s;
 }
 
 .color-picker input[type="radio"] {
