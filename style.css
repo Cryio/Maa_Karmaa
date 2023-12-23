@@ -540,3 +540,35 @@ button {
     -webkit-animation-delay: 2.1s;
 }
 
+.slideshow-container {
+    max-width: auto;
+    height: 80vh;
+    position: relative;
+    margin-top: -7.5vh;
+}
+
+.mySlides {
+    display: none;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+
+}
