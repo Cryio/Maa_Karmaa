@@ -17,7 +17,6 @@
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
 </head>
-<header>
   <header>
     <div class="container" style="font-family: Arial, Helvetica, sans-serif;">
         <div class="top-bar">
@@ -56,9 +55,23 @@
         </div>
     </div>
 </header>
-</header>
 <body translate="no" data-new-gr-c-s-check-loaded="14.1112.0" data-gr-ext-installed="">
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="img/48 mtr Dia clinker silo and two nos. 26 mtr grain silo,.png" style="width:100%">
+    <div class="text">Caption Text</div>
   </div>
+
+  <div class="mySlides fade">
+    <img src="img/500KL capacity ESR.png" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img/90 mtr high RCC Chimney.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+</div>
   <section class="nav">
   </section>
   <div class="nav-container">
@@ -325,6 +338,26 @@
   }
 
   new NavigationPage();
+
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.opacity = "0";
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.opacity = "1";
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 5000);
+  }
+
 </script>
 </body>
 </html>
