@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" type="image/png" href="img/logo_tr.png">
+<meta name="apple-mobile-web-app-title" content="KarmaTech">
+<link rel="shortcut icon" type="image/x-icon" href="img/logo_tr.ico">
+<link rel="mask-icon" type="image/x-icon" href="img/logo_tr.svg" color="#111">
+<title>Maa Karmaa</title> 
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(20, 20, 20, 1);
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 1000ms;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    max-width: 100%;
+    width: 100rem;
+  }
+
+  figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  figure::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(0, 0, 0, 0.5);
+    transform-origin: center;
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 300ms;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 600ms, transform 600ms;
+  }
+
+  a:is(:hover, :focus) figure::after {
+    opacity: 1;
+  }
+
+  a:is(:hover, :focus) figcaption {
+    opacity: 1;
+    transition: opacity 600ms;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    figcaption {
+      transform: translate3d(0, 2rem, 0);
+    }
+
+    figure::after {
+      border-radius: 50%;
+      opacity: 1;
+      transform: scale(0);
+      transition: transform 900ms;
+    }
+
+    a:is(:hover, :focus) figure::after {
+      transform: scale(2.5);
+    }
+
+    a:is(:hover, :focus) figcaption {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      transition: opacity 600ms 400ms, transform 600ms 400ms;
+    }
+
+    a:is(:hover, :focus) img {
+      transform: scale(1.2);
+    }
+  }
+</style>
+</head>
+<body>
+<ul id="imageList"></ul>
+
+<script>
+const items = [
+    { image: 'pic1.png', alt: 'Clinker Silo', caption: 'Clinker Silo' },
+    { image: 'pic2.png', alt: 'Bridge Piers', caption: 'Bridge Piers' },
+    { image: 'pic3.png', alt: 'Item 3', caption: 'Caption 3' },
+    { image: 'pic4.png', alt: 'Item 4', caption: 'Caption 4' },
+    { image: 'pic5.png', alt: 'Item 5', caption: 'Caption 5' },
+    { image: 'pic6.png', alt: 'Item 6', caption: 'Caption 6' },
+    { image: 'pic7.png', alt: 'Item 7', caption: 'Caption 7' },
+    { image: 'pic8.png', alt: 'Item 8', caption: 'Caption 8' },
+    { image: 'pic9.png', alt: 'Item 9', caption: 'Caption 9' },
+    { image: 'pic10.png', alt: 'Item 10', caption: 'Caption 10' },
+    { image: 'pic11.png', alt: 'Item 11', caption: 'Caption 11' },
+    { image: 'pic12.png', alt: 'Item 12', caption: 'Caption 12' },
+    { image: 'pic13.png', alt: 'Item 13', caption: 'Caption 13' },
+    { image: 'pic14.png', alt: 'Item 14', caption: 'Caption 14' },
+    { image: 'pic15.png', alt: 'Item 15', caption: 'Caption 15' },
+    { image: 'pic16.png', alt: 'Item 16', caption: 'Caption 16' },
+    { image: 'pic17.png', alt: 'Item 17', caption: 'Caption 17' },
+    { image: 'pic18.png', alt: 'Item 18', caption: 'Caption 18' },
+    { image: 'pic19.png', alt: 'Item 19', caption: 'Caption 19' },
+    { image: 'pic20.png', alt: 'Item 20', caption: 'Caption 20' },
+    { image: 'pic21.png', alt: 'Item 21', caption: 'Caption 21' },
+    { image: 'pic22.png', alt: 'Item 22', caption: 'Caption 22' },
+    { image: 'pic23.png', alt: 'Item 23', caption: 'Caption 23' },
+    { image: 'pic24.png', alt: 'Item 24', caption: 'Caption 24' },
+    { image: 'pic25.png', alt: 'Item 25', caption: 'Caption 25' },
+    { image: 'pic26.png', alt: 'Item 26', caption: 'Caption 26' },
+    { image: 'pic27.png', alt: 'Item 27', caption: 'Caption 27' },
+    { image: 'pic28.png', alt: 'Item 28', caption: 'Caption 28' },
+    { image: 'pic29.png', alt: 'Item 29', caption: 'Caption 29' },
+    { image: 'pic30.png', alt: 'Item 30', caption: 'Caption 30' },
+    { image: 'pic31.png', alt: 'Item 31', caption: 'Caption 31' },
+    { image: 'pic32.png', alt: 'Item 32', caption: 'Caption 32' },
+    { image: 'pic33.png', alt: 'Item 33', caption: 'Caption 33' },
+    { image: 'pic34.png', alt: 'Item 34', caption: 'Caption 34' },
+    { image: 'pic35.png', alt: 'Item 35', caption: 'Caption 35' },
+    { image: 'pic36.png', alt: 'Item 36', caption: 'Caption 36' },
+    { image: 'pic37.png', alt: 'Item 37', caption: 'Caption 37' },
+    { image: 'pic38.png', alt: 'Item 38', caption: 'Caption 38' },
+    { image: 'pic39.png', alt: 'Item 39', caption: 'Caption 39' },
+    { image: 'pic40.png', alt: 'Item 40', caption: 'Caption 40' },
+    { image: 'pic41.png', alt: 'Item 41', caption: 'Caption 41' },
+    { image: 'pic42.png', alt: 'Item 42', caption: 'Caption 42' },
+    { image: 'pic43.png', alt: 'Item 43', caption: 'Caption 43' },
+    { image: 'pic44.png', alt: 'Item 44', caption: 'Caption 44' },
+    { image: 'pic45.png', alt: 'Item 45', caption: 'Caption 45' },
+    { image: 'pic46.png', alt: 'Item 46', caption: 'Caption 46' },
+    { image: 'pic47.png', alt: 'Item 47', caption: 'Caption 47' },
+    { image: 'pic48.png', alt: 'Item 48', caption: 'Caption 48' },
+    { image: 'pic49.png', alt: 'Item 49', caption: 'Caption 49' },
+    { image: 'pic50.png', alt: 'Item 50', caption: 'Caption 50' },
+    { image: 'pic51.png', alt: 'Item 51', caption: 'Caption 51' },
+    { image: 'pic52.png', alt: 'Item 52', caption: 'Caption 52' },
+    { image: 'pic53.png', alt: 'Item 53', caption: 'Caption 53' },
+    { image: 'pic54.png', alt: 'Item 54', caption: 'Caption 54' },
+    { image: 'pic55.png', alt: 'Item 55', caption: 'Caption 55' },
+    { image: 'pic56.png', alt: 'Item 56', caption: 'Caption 56' },
+    { image: 'pic57.png', alt: 'Item 57', caption: 'Caption 57' },
+    { image: 'pic58.png', alt: 'Item 58', caption: 'Caption 58' },
+
+];
+
+const imageList = document.getElementById('imageList');
+
+items.forEach(item => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+    <a href="">
+        <figure>
+        <img src='img/photo-gallery/${item.image}'>
+        <figcaption>${item.caption}</figcaption>
+        </figure>
+    </a>
+    `;
+    imageList.appendChild(li);
+});
+</script>
+</body>
+</html>
