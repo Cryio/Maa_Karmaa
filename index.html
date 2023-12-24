@@ -82,7 +82,7 @@
         <div class="owl-item" style="width: auto;"><div class="item" style="background-image: url(img/Bridge\ Piers\ \(28\ Nos.\)\ for\ Mopa\ airport.png);">
           <div class="item-desc">
             <h3 style="color: hsl(34, 78%, 91%);">Bridge piers</h3>
-            <p>The construction of 28 bridge piers follows a meticulous process, beginning with a comprehensive site analysis to inform design considerations. Excavation and reinforced concrete footings create a stable foundation, followed by the strategic placement of vertical rebar and the pouring of concrete for pier columns. Rigorous quality control measures ensure adherence to design specifications, with inspections confirming structural integrity.
+            <p>The construction of bridge piers follows a meticulous process, beginning with a comprehensive site analysis to inform design considerations. Excavation and reinforced concrete footings create a stable foundation, followed by the strategic placement of vertical rebar and the pouring of concrete for pier columns. Rigorous quality control measures ensure adherence to design specifications, with inspections confirming structural integrity.
             </div>
         </div></div><div class="owl-item" style="width: auto;"><div class="item" style="background-image: url(img/Underground\ surge\ pool.png);">
           <div class="item-desc">
@@ -92,7 +92,7 @@
         </div></div><div class="owl-item" style="width: auto;"><div class="item" style="background-image: url(img/ESR.png);">
           <div class="item-desc">
             <h3 style="color: hsl(34, 78%, 91%);">ESR with CWR and Pump House</h3>
-            <p>The setup involves a range of Electrolytic Storage Reservoirs and a Clarified Water Reservoir, accompanied by a Pump House. This configuration is a comprehensive system for managing energy storage and water resources in an industrial context.</p>
+            <p>The setup involves a range of Elevated Storage Reservoirs and a Clarified Water Reservoir, accompanied by a Pump House. This configuration is a comprehensive system for managing energy storage and water resources in an industrial context.</p>
           </div>
         </div></div><div class="owl-item" style="width: auto;"><div class="item" style="background-image: url(img/90\ mtr\ high\ RCC\ Chimney.png);">
           <div class="item-desc">
@@ -101,14 +101,14 @@
           </div>
         </div></div><div class="owl-item" style="width: auto;"><div class="item" style="background-image: url(img/Three\ nos.\ cement\ silos.png);">
           <div class="item-desc">
-            <h3 style="color: hsl(34, 78%, 91%);">3<sup>nos.</sup> cement silos</h3>
-            <p>A three cylindrical structures designed to store and dispense bulk quantities of cement. These silos, typically made of steel, come with loading/unloading systems, ventilation, control systems, and are often placed on stable foundations. The arrangement of three silos allows for efficient storage and management of cement, catering to the needs of construction projects.
+            <h3 style="color: hsl(34, 78%, 91%);">Cement Silos</h3>
+            <p>A cylindrical structures designed to store and dispense bulk quantities of cement. These silos, typically made of steel, come with loading/unloading systems, ventilation, control systems, and are often placed on stable foundations. The arrangement of silos allows for efficient storage and management of cement, catering to the needs of construction projects.
             </p>
           </div>
         </div></div><div class="owl-item" style="width: auto;"><div class="item" style="background-image: url(img/48\ mtr\ Dia\ clinker\ silo\ and\ two\ nos.\ 26\ mtr\ grain\ silo\,.png);">
           <div class="item-desc">
-            <h3 style="color: hsl(34, 78%, 91%);">Clinker silo and two nos. 26 mtr grain silo</h3>
-            <p>A clinker silo serves as a vital component in cement production, storing the essential material, clinker, within a cylindrical steel structure equipped with loading/unloading systems and ventilation. On the other hand, two 26-meter grain silos are dedicated to agricultural storage, providing cylindrical structures, likely made of steel, designed for efficient loading and unloading of grain.</p>
+            <h3 style="color: hsl(34, 78%, 91%);">Clinker and Grain Silo</h3>
+            <p>A clinker silo serves as a vital component in cement production, storing the essential material, clinker, within a cylindrical steel structure equipped with loading/unloading systems and ventilation. On the other hand, grain silos are dedicated to agricultural storage, providing cylindrical structures, likely made of steel, designed for efficient loading and unloading of grain.</p>
           </div>
         </div></div>
         </div></div> 
@@ -117,7 +117,7 @@
   <section class="slider" id="tab-Specilities">
     <h1 style="text-shadow: 2px 2px 5px black; text-transform: uppercase;">Specilities</h1>
     <h3 style="text-align: left; line-height: 2.5;"><ul style="list-style-type:disc; display: inline-block; margin: 0 100px 0 0;">
-      <li>Industrial & Commercial Const.</li>
+      <b><li>Clinker, Cement and Fly Ash Silo</li></b>
       <li>Cement Industry Projects</li> 
       <li>Glass & Melamine Projects</li>
       <li>Bridge Piers</li>
@@ -126,14 +126,14 @@
       <li>Petrochemicals Refineries</li>
       <li>Biogas and Fertilizers</li> 
       </ul><ul style="list-style-type:disc; display: inline-block; margin: 0 100px 0 0;">
-      <li>Green building projects</li> 
+      <b><li>RCC Chimney, Prilling Tower and Overhead Tanks</li><
       <li>Irrigation and Dams Projects</li> 
       <li>Thermal Power Plants</li> 
-      <li>Power Plants industry</li> 
+      <li>Power Plants Industry</li> 
       <li>High Rise Structure</li> 
       <li>Design & Engineering Support</li> 
       <li>Architectural & Structural Design</li> 
-      <li>Water Sanitation project</li></ul></h3>
+      <li>Water Sanitation Project</li></ul></h3>
   </section>
   <section class="slider affiliation-section" id="tab-Affiliations">
   <section class="slider" id="tab-Affiliations">
@@ -204,12 +204,15 @@
     $(".custom-carousel").owlCarousel({
       autoWidth: true,
       loop: true,
+      autoplay: true,
+      autoplayTimeout: 2000,
       responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 3}
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        }
       }
     });
 
