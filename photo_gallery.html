@@ -116,11 +116,32 @@
       transform: scale(1.2);
     }
   }
+
+  .full-image-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+
+        .full-image-container img {
+          max-height: 100%;
+          width: auto;
+          border-radius: 10px;
+        }
 </style>
 </head>
 <body>
-<ul id="imageList"></ul>
-
+    <ul id="imageList"></ul>
+    <div class="full-image-container" id="fullImageContainer">
+        <img id="fullImage" src="" alt="Full Image">
+    </div>
 <script>
 const items = [
     { image: 'pic1.png', alt: 'Clinker Silo', caption: 'Clinker Silo' },
@@ -181,23 +202,37 @@ const items = [
     { image: 'pic56.png', alt: 'Item 56', caption: 'Caption 56' },
     { image: 'pic57.png', alt: 'Item 57', caption: 'Caption 57' },
     { image: 'pic58.png', alt: 'Item 58', caption: 'Caption 58' },
-
+    { image: 'pic59.png', alt: 'Item 59', caption: 'Caption 59' },
+    { image: 'pic60.png', alt: 'Item 60', caption: 'Caption 60' },
 ];
 
 const imageList = document.getElementById('imageList');
+        const fullImageContainer = document.getElementById('fullImageContainer');
+        const fullImage = document.getElementById('fullImage');
 
-items.forEach(item => {
-    const li = document.createElement('li');
-    li.innerHTML = `
-    <a href="">
-        <figure>
-        <img src='img/photo-gallery/${item.image}'>
-        <figcaption>${item.caption}</figcaption>
-        </figure>
-    </a>
-    `;
-    imageList.appendChild(li);
-});
+        items.forEach((item, index) => {
+            const li = document.createElement('li');
+            li.innerHTML = `
+                <a href="#" onclick="showFullImage(${index})">
+                    <figure>
+                        <img src='img/photo-gallery/${item.image}' alt='${item.alt}'>
+                        <figcaption>${item.caption}</figcaption>
+                    </figure>
+                </a>
+            `;
+            imageList.appendChild(li);
+        });
+
+function showFullImage(index) {
+            const selectedItem = items[index];
+            fullImage.src = `img/photo-gallery/${selectedItem.image}`;
+            fullImage.alt = selectedItem.alt;
+            fullImageContainer.style.display = 'flex';
+        }
+
+        fullImageContainer.addEventListener('click', () => {
+            fullImageContainer.style.display = 'none';
+        });
 </script>
 </body>
 </html>
