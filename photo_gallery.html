@@ -40,7 +40,7 @@
     gap: 0.5rem;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     max-width: 100%;
-    width: 100rem;
+    width: 70rem;
   }
 
   figure {
@@ -144,66 +144,39 @@
     </div>
 <script>
 const items = [
-    { image: 'pic1.png', alt: 'Clinker Silo', caption: 'Clinker Silo' },
-    { image: 'pic2.png', alt: 'Bridge Piers', caption: 'Bridge Piers' },
-    { image: 'pic3.png', alt: 'Item 3', caption: 'Caption 3' },
-    { image: 'pic4.png', alt: 'Item 4', caption: 'Caption 4' },
-    { image: 'pic5.png', alt: 'Item 5', caption: 'Caption 5' },
-    { image: 'pic6.png', alt: 'Item 6', caption: 'Caption 6' },
-    { image: 'pic7.png', alt: 'Item 7', caption: 'Caption 7' },
-    { image: 'pic8.png', alt: 'Item 8', caption: 'Caption 8' },
-    { image: 'pic9.png', alt: 'Item 9', caption: 'Caption 9' },
-    { image: 'pic10.png', alt: 'Item 10', caption: 'Caption 10' },
-    { image: 'pic11.png', alt: 'Item 11', caption: 'Caption 11' },
-    { image: 'pic12.png', alt: 'Item 12', caption: 'Caption 12' },
-    { image: 'pic13.png', alt: 'Item 13', caption: 'Caption 13' },
-    { image: 'pic14.png', alt: 'Item 14', caption: 'Caption 14' },
-    { image: 'pic15.png', alt: 'Item 15', caption: 'Caption 15' },
-    { image: 'pic16.png', alt: 'Item 16', caption: 'Caption 16' },
-    { image: 'pic17.png', alt: 'Item 17', caption: 'Caption 17' },
-    { image: 'pic18.png', alt: 'Item 18', caption: 'Caption 18' },
-    { image: 'pic19.png', alt: 'Item 19', caption: 'Caption 19' },
-    { image: 'pic20.png', alt: 'Item 20', caption: 'Caption 20' },
-    { image: 'pic21.png', alt: 'Item 21', caption: 'Caption 21' },
-    { image: 'pic22.png', alt: 'Item 22', caption: 'Caption 22' },
-    { image: 'pic23.png', alt: 'Item 23', caption: 'Caption 23' },
-    { image: 'pic24.png', alt: 'Item 24', caption: 'Caption 24' },
-    { image: 'pic25.png', alt: 'Item 25', caption: 'Caption 25' },
-    { image: 'pic26.png', alt: 'Item 26', caption: 'Caption 26' },
-    { image: 'pic27.png', alt: 'Item 27', caption: 'Caption 27' },
-    { image: 'pic28.png', alt: 'Item 28', caption: 'Caption 28' },
-    { image: 'pic29.png', alt: 'Item 29', caption: 'Caption 29' },
-    { image: 'pic30.png', alt: 'Item 30', caption: 'Caption 30' },
-    { image: 'pic31.png', alt: 'Item 31', caption: 'Caption 31' },
-    { image: 'pic32.png', alt: 'Item 32', caption: 'Caption 32' },
-    { image: 'pic33.png', alt: 'Item 33', caption: 'Caption 33' },
-    { image: 'pic34.png', alt: 'Item 34', caption: 'Caption 34' },
-    { image: 'pic35.png', alt: 'Item 35', caption: 'Caption 35' },
-    { image: 'pic36.png', alt: 'Item 36', caption: 'Caption 36' },
-    { image: 'pic37.png', alt: 'Item 37', caption: 'Caption 37' },
-    { image: 'pic38.png', alt: 'Item 38', caption: 'Caption 38' },
-    { image: 'pic39.png', alt: 'Item 39', caption: 'Caption 39' },
-    { image: 'pic40.png', alt: 'Item 40', caption: 'Caption 40' },
-    { image: 'pic41.png', alt: 'Item 41', caption: 'Caption 41' },
-    { image: 'pic42.png', alt: 'Item 42', caption: 'Caption 42' },
-    { image: 'pic43.png', alt: 'Item 43', caption: 'Caption 43' },
-    { image: 'pic44.png', alt: 'Item 44', caption: 'Caption 44' },
-    { image: 'pic45.png', alt: 'Item 45', caption: 'Caption 45' },
-    { image: 'pic46.png', alt: 'Item 46', caption: 'Caption 46' },
-    { image: 'pic47.png', alt: 'Item 47', caption: 'Caption 47' },
-    { image: 'pic48.png', alt: 'Item 48', caption: 'Caption 48' },
-    { image: 'pic49.png', alt: 'Item 49', caption: 'Caption 49' },
-    { image: 'pic50.png', alt: 'Item 50', caption: 'Caption 50' },
-    { image: 'pic51.png', alt: 'Item 51', caption: 'Caption 51' },
-    { image: 'pic52.png', alt: 'Item 52', caption: 'Caption 52' },
-    { image: 'pic53.png', alt: 'Item 53', caption: 'Caption 53' },
-    { image: 'pic54.png', alt: 'Item 54', caption: 'Caption 54' },
-    { image: 'pic55.png', alt: 'Item 55', caption: 'Caption 55' },
-    { image: 'pic56.png', alt: 'Item 56', caption: 'Caption 56' },
-    { image: 'pic57.png', alt: 'Item 57', caption: 'Caption 57' },
-    { image: 'pic58.png', alt: 'Item 58', caption: 'Caption 58' },
-    { image: 'pic59.png', alt: 'Item 59', caption: 'Caption 59' },
-    { image: 'pic60.png', alt: 'Item 60', caption: 'Caption 60' },
+    { image: 'pic1.png', caption: 'Metro Column for AFR' },
+    { image: 'pic2.png', caption: '90Mtr RCC Chimney' },
+    { image: 'pic5.png', caption: '48Mtr Dia Clinker Silo' },
+    { image: 'pic7.png', caption: 'Slipform in Progress' },
+    { image: 'pic8.png', caption: '60Mtr RCC Chimney for Glass Factory' },
+    { image: 'pic10.png', caption: 'Cement Silo for Shun Shing Group' },
+    { image: 'pic54.png', caption: '6 MT Slipform Jacks' },
+    { image: 'pic13.png', caption: '275Mtr Chimney Slipform Assembly' },
+    { image: 'pic15.png', caption: '275Mtr Chimney Inprogress' },
+    { image: 'pic16.png', caption: '3nos. Cement Silo Bangladesh' },
+    { image: 'pic19.png', caption: 'Raft Foundation for Pier Goa' },
+    { image: 'pic22.png', caption: 'Pier Shaft Work Using Slipform' },
+    { image: 'pic24.png', caption: 'Pier Shaft Inprogress' },
+    { image: 'pic26.png', caption: 'Overhead Tank for Jal Jeevan Mission' },
+    { image: 'pic29.png', caption: 'Pump House and Overhead Tank' },
+    { image: 'pic31.png', caption: '67Mtr High Metro Column for UltraTech' },
+    { image: 'pic33.png', caption: '53Mtr High Metro Column for UltraTech' },
+    { image: 'pic36.png', caption: '38Mtr High Metro Column for UltraTech' },
+    { image: 'pic37.png', caption: 'Bridge Pier for Mopa Airport' },
+    { image: 'pic39.png', caption: 'ESR' },
+    { image: 'pic40.png', caption: 'ESR Foundation' },
+    { image: 'pic41.png', caption: 'Cement Silo for BrothersGroup' },
+    { image: 'pic42.png', caption: 'Railway Bridge Piers' },
+    { image: 'pic44.png', caption: 'Surge Pool for Irrigation Project' },
+    { image: 'pic45.png', caption: 'Surge Pool for Irrigation Project' },
+    { image: 'pic48.png', caption: 'Deck Slab Erection' },
+    { image: 'pic49.png', caption: 'Deck Slab for Metro Pier' },
+    { image: 'pic50.png', caption: 'Ventilation Shaft' },
+    { image: 'pic55.png', caption: 'Slipform Erection Inprogress for Cement Silo' },
+    { image: 'pic56.png', caption: 'Cement Silo Inprogress' },
+    { image: 'pic57.png', caption: 'Cement Silo' },
+    { image: 'pic59.png', caption: 'Bridge Piers for Mopa Airport' },
+    { image: 'pic60.png', caption: 'Bridge Piers for Mopa Airport' },
 ];
 
 const imageList = document.getElementById('imageList');
@@ -215,7 +188,7 @@ const imageList = document.getElementById('imageList');
             li.innerHTML = `
                 <a href="#" onclick="showFullImage(${index})">
                     <figure>
-                        <img src='img/photo-gallery/${item.image}' alt='${item.alt}'>
+                        <img src='img/photo-gallery/${item.image}' alt='${item.caption}'>
                         <figcaption>${item.caption}</figcaption>
                     </figure>
                 </a>
