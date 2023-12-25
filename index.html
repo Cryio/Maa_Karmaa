@@ -10,8 +10,9 @@
   <title>Maa Karmaa</title>
   <link rel="stylesheet" 
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="owl.carousel.min.css">
+      crossorigin="anonymous" referrerpolicy="no-referrer" />  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="owl.carousel.min.css">
 <link rel="stylesheet" href="owl.theme.default.css" type="text/css">
 <link rel="stylesheet" href="bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
@@ -66,6 +67,7 @@
     <a class="nav-tab" href="#tab-Affiliations">Clientele</a>
     <a class="nav-tab" href="#tab-About">About</a>
     <a class="nav-tab" href="#tab-Contact">Contact</a>
+    <a id="galleryTab" class="nav-tab" href="photo_gallery.html">Gallery</a>
     <span class="nav-tab-slider" style="width: 0px; left: 0px;"></span>
   </div>
 <main class="main">
@@ -373,19 +375,6 @@ slidesData.forEach((slide, index) => {
   textElement.style.top = '0';
   textElement.style.bottom = '83.5%';
 
-  const h1Element = document.createElement('h1');
-  h1Element.style.backgroundColor = 'hsl(0, 0%, 90%)';
-  h1Element.style.padding = '2vh';
-  h1Element.style.borderRadius = '25px';
-
-  const aElement = document.createElement('a');
-  aElement.href = 'photo_gallery.html';
-  aElement.style.color = '#cc3843';
-  aElement.style.textTransform = 'uppercase';
-  aElement.textContent = 'Photo Gallery';
-
-  h1Element.appendChild(aElement);
-  textElement.appendChild(h1Element);
   slideElement.appendChild(textElement);
   slideshowContainer.appendChild(slideElement);
 
@@ -417,6 +406,12 @@ slidesData.forEach((slide, index) => {
     setTimeout(showSlides, 5000);
   }
   document.body.style.zoom="100%"
+const galleryTab = document.getElementById('galleryTab');
+galleryTab.addEventListener('click', function (event) {
+  event.preventDefault();
+  window.location.href = 'photo_gallery.html';
+});
+
 </script>
 </body>
 </html>
