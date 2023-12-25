@@ -379,6 +379,12 @@ button {
     transition: opacity 0.3s ease;
     margin: 5px;
 }
+.about-section,
+.affiliation-section,
+.contact-section,
+.specilities-section {
+    margin-bottom: 200px;
+}
 
 @media screen and (max-width: 1100px) {
     .image-container img {
@@ -388,12 +394,6 @@ button {
         margin: 0 0 10px;
         font-size: 24px;
         line-height: 33px;
-}
-    .about-section,
-    .affiliation-section,
-    .contact-section,
-    .specilities-section {
-        margin-bottom: 200px;
 }
 }
 
@@ -407,12 +407,6 @@ button {
         font-size: 20px;
         line-height: 28px;
     }
-    .about-section,
-    .affiliation-section,
-    .contact-section,
-    .specilities-section {
-        margin-bottom: 200px;
-}
 }
 
 @media screen and (max-width: 600px) {
@@ -425,12 +419,6 @@ button {
     font-size: 18px;
     line-height: 25px;
 }
-.about-section,
-.affiliation-section,
-.contact-section,
-.specilities-section {
-    margin-bottom: 200px;
-}
 }
 @media screen and (max-width: 480px) {
     .image-container img {
@@ -442,13 +430,6 @@ button {
         font-size: 16px;
         line-height: 23px;
     }
-        
-    .about-section,
-    .affiliation-section,
-    .contact-section,
-    .specilities-section {
-        margin-bottom: 200px;
-}
 }
 
 @media screen only (min-width: 360px) {
