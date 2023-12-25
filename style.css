@@ -382,12 +382,18 @@ button {
 
 @media screen and (max-width: 1100px) {
     .image-container img {
-        width: 165px;
+        width: 175px;
     }
     h3 {
         margin: 0 0 10px;
         font-size: 24px;
         line-height: 33px;
+}
+    .about-section,
+    .affiliation-section,
+    .contact-section,
+    .specilities-section {
+        margin-bottom: 200px;
 }
 }
 
@@ -398,9 +404,15 @@ button {
 
     h3 {
         margin: 0 0 10px;
-        font-size: 21px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 28px;
     }
+    .about-section,
+    .affiliation-section,
+    .contact-section,
+    .specilities-section {
+        margin-bottom: 200px;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -410,8 +422,14 @@ button {
 
     h3 {
     margin: 0 0 10px;
-    font-size: 19px;
-    line-height: 27px;
+    font-size: 18px;
+    line-height: 25px;
+}
+.about-section,
+.affiliation-section,
+.contact-section,
+.specilities-section {
+    margin-bottom: 200px;
 }
 }
 @media screen and (max-width: 480px) {
@@ -421,14 +439,16 @@ button {
 
     h3 {
         margin: 0 0 10px;
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 16px;
+        line-height: 23px;
     }
         
     .about-section,
-    .affiliation-section {
+    .affiliation-section,
+    .contact-section,
+    .specilities-section {
         margin-bottom: 200px;
-    }
+}
 }
 
 @media screen only (min-width: 360px) {
