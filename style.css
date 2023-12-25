@@ -298,7 +298,7 @@ h2 {
 
 h3 {
     margin: 0 0 10px;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 36px;
 }
 
@@ -385,16 +385,55 @@ button {
 .specilities-section {
     margin-bottom: 200px;
 }
+.slideshow-container {
+    max-height: auto;
+    height: 80vh;
+    position: relative;
+    margin-top: -1.5vh;
+    overflow: hidden;
+}
+
+.slideshow-container img {
+    display: block;
+    width: 1100px;
+    height: 700px;
+    overflow: hidden;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 @media screen and (max-width: 1100px) {
     .image-container img {
         width: 175px;
     }
+
     h3 {
         margin: 0 0 10px;
         font-size: 24px;
         line-height: 33px;
-}
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -407,19 +446,28 @@ button {
         font-size: 20px;
         line-height: 28px;
     }
+
 }
 
 @media screen and (max-width: 600px) {
     .image-container img {
         width: 100px;
-}
+    }
 
     h3 {
-    margin: 0 0 10px;
-    font-size: 18px;
-    line-height: 25px;
+        margin: 0 0 10px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .slideshow-container img {
+        display: block;
+        width: 600px;
+        height: 700px;
+        overflow: hidden;
+    }
+    
 }
-}
+
 @media screen and (max-width: 480px) {
     .image-container img {
         width: 100px;
@@ -430,6 +478,13 @@ button {
         font-size: 16px;
         line-height: 23px;
     }
+    .slideshow-container img {
+        display: block;
+        width: 480px;
+        height: 700px;
+        overflow: hidden;
+    }
+    
 }
 
 @media screen only (min-width: 360px) {
@@ -546,37 +601,4 @@ button {
 
 .loader span:nth-child(22) {
     -webkit-animation-delay: 2.1s;
-}
-
-.slideshow-container {
-    max-height: auto;
-    height: 80vh;
-    position: relative;
-    margin-top: -5vh;
-}
-
-.mySlides {
-    display: none;
-}
-
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1s;
-}
-
-@keyframes fade {
-    from {opacity: 0.4}
-    to {opacity: 1}
-
 }
