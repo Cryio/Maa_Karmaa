@@ -1,4 +1,4 @@
-# Karma_Tech
-A base design for the website for Karma Tech
+# Maa_Karmaa
+A base design for the website for Maa Karmaa
 
-https://cryio.github.io/Karma_Tech/
+https://cryio.github.io/Maa_Karmaa/
