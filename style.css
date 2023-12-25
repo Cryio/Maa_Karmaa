@@ -387,7 +387,7 @@ button {
 }
 .slideshow-container {
     max-height: auto;
-    height: 80vh;
+    height: 75vh;
     position: relative;
     margin-top: -1.5vh;
     overflow: hidden;
