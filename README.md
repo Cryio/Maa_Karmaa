@@ -1,5 +1,4 @@
 # Maa Karmaa Global Engineering LLP Website
-=======
 
 Welcome to the Maa Karmaa Global Engineering LLP website! This repository contains the source code and assets for our company's website.
 
