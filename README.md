@@ -79,7 +79,7 @@ Welcome to the Maa Karmaa Global Engineering LLP website. We are committed to cr
 Violations of this Code of Conduct may result in:
 - **Warning:** A first-time violation may result in a warning and a request for corrective action.
 - **Temporary Suspension:** Repeat violations may lead to a temporary suspension of access.
-- **Permanent Ban:** Severe or continued violations may result in a permanent ban from the community.
+- **Permanent Ban:** Severe or continued violations may result in a permanent ban from the community and or legal action.
 
 ## Conclusion
 By using the Maa Karmaa Global Engineering LLP website, you agree to abide by this Code of Conduct. Let's create a positive and respectful online space for everyone. Thank you for being a part of our community!
