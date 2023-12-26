@@ -1,8 +1,3 @@
-# Maa_Karmaa
-A base design for the website for Maa Karmaa
-
-(Experimental Branch for VS)
-
 # Maa Karmaa Global Engineering LLP Website Code of Conduct
 
 ## Introduction
