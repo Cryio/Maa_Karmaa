@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /img/
+Disallow: /script.js
+Disallow: /bootstrap.min.css
+Disallow: /owl.carousel.min.css
+Disallow: /owl.theme.default.css
+Disallow: /style.css
