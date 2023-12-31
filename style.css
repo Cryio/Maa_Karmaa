@@ -706,7 +706,7 @@ button {
     display: flex;
     gap: 10px;
     width: 100%;
-    height: 250px;
+    height: 125px;
     padding: 0 50px;
     box-sizing: border-box;
     overflow: auto;
@@ -716,8 +716,8 @@ button {
     width: 0;
 }
 .thumbnail .item{
-    width: 150px;
-    height: 220px;
+    width: 125px;
+    height: 90px;
     filter: brightness(.5);
     transition: .5s;
     flex-shrink: 0;
