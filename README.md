@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/89139c6b-4d4d-4934-905a-b284da67397b/deploy-status)](https://app.netlify.com/sites/maakarmaa/deploys)
 # Maa Karmaa Global Engineering LLP Website
 
 Welcome to the Maa Karmaa Global Engineering LLP website! This repository contains the source code and assets for our company's website.
