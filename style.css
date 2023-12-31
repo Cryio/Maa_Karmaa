@@ -644,14 +644,14 @@ button {
 .slider .list .item .content p:nth-child(1){
     text-transform: uppercase;
     letter-spacing: 10px;
-    color: #eee;
+    color: #faebd7;
 }
 .slider .list .item .content h2{
     font-size: 70px;
     line-height: 70px;
     margin: 0;
     padding: 20px;
-    color: #eee;
+    color: #faebd7;
 }
 .slider .list .item.active{
     opacity: 1;
@@ -685,18 +685,18 @@ button {
     z-index: 100;
 }
 .arrows button{
-    background-color: #eee5;
+    background-color: transparent;
     border: none;
     font-family: monospace;
     width: 40px;
     height: 40px;
     border-radius: 5px;
     font-size: x-large;
-    color: #eee;
+    color: #faebd7;
     transition: .5s;
 }
 .arrows button:hover{
-    background-color: #eee;
+    background-color: #faebd7;
     color: black;
 }
 .thumbnail{
@@ -730,11 +730,6 @@ button {
 }
 .thumbnail .item.active{
     filter: brightness(1);
-}
-.thumbnail .item .content{
-    position: absolute;
-    inset: auto 10px 10px 10px;
-    color: #eee;
 }
 @media screen and (max-width: 678px) {
     .thumbnail{
